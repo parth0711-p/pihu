@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Pihu 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Dancing+Script:wght@600;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#e0245e;--deep:#8a1c3c;--cream:#fdf0d5;--ink:#4a2030}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden;font-family:'Fredoka',sans-serif;color:var(--ink);background:#fff4ee}
+.scene{position:fixed;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px;overflow:hidden}
+.scene.on{display:flex;animation:fade .8s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.hint{position:absolute;bottom:22px;font-size:12px;letter-spacing:2px;opacity:.55;text-transform:uppercase}
+.script{font-family:'Dancing Script',cursive;font-weight:700}
+.btn{margin-top:18px;padding:13px 30px;border:0;border-radius:30px;background:linear-gradient(135deg,#ff6b9a,var(--pink));color:#fff;font:600 16px Fredoka;box-shadow:0 8px 20px #e0245e55;cursor:pointer}
+#s1{background:radial-gradient(circle at 50% 40%,#ffe3e8,#fff4ee 70%)}
+#heart{font-size:110px;cursor:pointer;animation:beat 1.2s infinite;filter:drop-shadow(0 10px 25px #ff4d7e88);user-select:none}
+@keyframes beat{50%{transform:scale(1.12)}}
+#s2{background:linear-gradient(#d81b5c,#a80f48);color:#fff}
+#s2 .big{font-family:'Dancing Script';font-size:78px;line-height:1.05;margin:8px 0}
+#s3{background:radial-gradient(circle at 50% 80%,#fff,#ffe1d2)}
+#tree{width:min(90vw,420px);height:60vh}
+#s3 .cap{position:absolute;left:18px;bottom:28px;text-align:left;background:#ffffff99;padding:10px 16px;border-radius:12px}
+.fh{opacity:0;transform:scale(0);transform-origin:center;transition:all .6s}
+.fh.on{opacity:1;transform:scale(1)}
+#s4{background:radial-gradient(#fff4d6,#f9e3b4)}
+#gift{font-size:110px;cursor:pointer;animation:beat 1.5s infinite}
+#s4 h2{font-family:'Caveat';font-size:42px;margin-top:10px}
+#s4b{background:radial-gradient(#fff4d6,#f9e3b4)}
+#s4b h1{font-size:50px;color:var(--deep)}
+.rose{position:fixed;top:-60px;font-size:40px;animation:fall linear forwards;pointer-events:none;z-index:9}
+@keyframes fall{to{transform:translateY(115vh) rotate(360deg)}}
+#s5{background:radial-gradient(#fff4d6,#f7e0b0)}
+#wall{position:absolute;inset:0}
+.pol{position:absolute;width:23vw;max-width:150px;min-width:90px;aspect-ratio:3/4;background:#fff;padding:5px 5px 14px;box-shadow:0 8px 20px #0003;opacity:0;transform:scale(.3) rotate(0);transition:all .7s}
+.pol div{width:100%;height:100%;background:#e9c9cf center/cover}
+.pol.on{opacity:1}
+#s5 .end{position:absolute;bottom:40px;width:100%;opacity:0;transition:opacity 1s}
+#s5 .end.on{opacity:1}
+#s6{background:radial-gradient(#4a1236,#1a0614);color:#fff}
+.tag{background:#ffffff18;padding:5px 14px;border-radius:20px;font-size:12px;color:#ffd36e;margin-bottom:8px}
+#s6 h1{font-size:34px}
+#door{width:170px;height:250px;margin:24px 0;background:linear-gradient(#8e2a6b,#5e1646);border-radius:85px 85px 4px 4px;position:relative;cursor:pointer;box-shadow:0 0 60px #ff4da622;transition:transform 1s;transform-origin:left;perspective:600px}
+#door .ring{position:absolute;top:110px;left:60px;width:50px;height:50px;border:7px solid #f2b73c;border-radius:50%}
+#door .sign{position:absolute;top:50px;left:25px;right:25px;background:#fff;color:#333;font:600 12px Fredoka;padding:7px;border-radius:5px;transform:rotate(-3deg)}
+#door.shake{animation:knock .25s}
+@keyframes knock{50%{transform:translateX(5px)}}
+#door.open{transform:rotateY(-70deg)}
+.glow{display:none;position:absolute;inset:0;background:radial-gradient(#ffd36e,#f2b73c);border-radius:85px 85px 4px 4px;color:#4a2030;align-items:center;justify-content:center;flex-direction:column;z-index:-1}
+.dots span{display:inline-block;width:10px;height:10px;border-radius:50%;background:#444;margin:0 3px}.dots span.on{background:#ffcf4d}
+.room{background:linear-gradient(160deg,#fff4ee,#ffd9e4)}
+.room small{color:var(--pink);font-weight:600;letter-spacing:2px;font-size:11px}
+.room h2{font-size:28px;margin:6px 0 4px;color:#3a1020}
+.room h2 em{color:#e8a317;font-style:normal;background:linear-gradient(transparent 70%,#ffe08a 70%)}
+.room p.s{font-size:13px;opacity:.7;margin-bottom:12px;max-width:300px}
+.frame{border:10px solid #b8893a;box-shadow:0 10px 30px #0004;position:relative;width:min(70vw,260px);height:min(70vw,260px);background:#fff}
+.frame canvas,.frame .ph{position:absolute;inset:0;width:100%;height:100%}
+.ph{background:#ead0d6 center/cover}
+.plate{margin-top:14px;background:linear-gradient(#e3c273,#c89d45);padding:8px 26px;border-radius:3px;font-size:13px}
+.nav{margin-top:10px}.nav button{border:0;background:#fff;width:34px;height:34px;border-radius:50%;margin:0 8px;cursor:pointer;font-size:16px}
+#grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;width:min(90vw,360px);aspect-ratio:4/3;background:#fff;padding:4px;border-radius:8px;box-shadow:0 10px 30px #0003}
+#grid div{background-size:300% 300%;border-radius:2px;cursor:pointer}
+#grid div.sel{outline:3px solid var(--pink);z-index:1}
+.st{margin-top:12px;font-size:13px}
+#env{width:230px;height:150px;background:linear-gradient(#c8934e,#a87634);border-radius:6px;position:relative;cursor:pointer;margin:14px 0;box-shadow:0 10px 25px #0004}
+#env::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,transparent 49%,#00000022 50%) ,linear-gradient(-160deg,transparent 49%,#00000022 50%)}
+#env i{position:absolute;left:50%;top:50%;width:44px;height:44px;margin:-22px;border-radius:50%;background:radial-gradient(#ff7aa2,var(--pink));animation:beat 1.2s infinite}
+#letter{background:#fffaf4;max-width:360px;width:92vw;max-height:78vh;overflow:auto;padding:24px;text-align:left;border-radius:6px;box-shadow:0 12px 35px #0003;font:500 17px/1.5 Caveat,cursive;white-space:pre-line;background-image:repeating-linear-gradient(transparent 0 29px,#f0e4d8 30px)}
+#letter .sig{display:block;text-align:right;color:var(--pink);font-weight:700;margin-top:10px}
+#audio{display:none;margin-top:10px}
+#prom{background:#fff8e6;border:2px dashed #cdb98c;padding:16px 20px;border-radius:8px;width:min(86vw,320px);text-align:left;position:relative}
+#prom h3{text-align:center}#prom .sub{text-align:center;font-size:10px;letter-spacing:2px;opacity:.6;margin-bottom:10px}
+#prom label{display:flex;gap:10px;align-items:center;font-size:13px;margin:9px 0;cursor:pointer}
+#prom input{accent-color:var(--pink);width:18px;height:18px}
+.stamp{position:absolute;top:40%;left:18%;border:3px solid var(--pink);color:var(--pink);padding:6px 14px;font-weight:700;transform:rotate(-14deg);opacity:0;transition:all .4s;transform-origin:center;font-size:20px;background:#fff8e6cc}
+.stamp.on{opacity:1}
+.btn[disabled]{opacity:.45}
+#mute{position:fixed;top:10px;right:10px;z-index:20;border:0;background:#fff;border-radius:50%;width:34px;height:34px;cursor:pointer;display:none}
+</style></head><body>
+<button id="mute">🔊</button>
 
+<section class="scene on" id="s1"><div style="font-size:14px;opacity:.7;margin-bottom:10px">someone made this, just for you</div>
+<div id="heart">💗</div><div class="hint">tap the heart</div></section>
+
+<section class="scene" id="s1b" style="background:radial-gradient(#ffe3e8,#fff4ee 70%)"><h1 style="font-size:32px;color:var(--deep)" id="stillyou"></h1><p style="margin-top:6px;font-family:'Dancing Script';font-size:20px" id="by1"></p><div class="hint">tap to keep going</div></section>
+
+<section class="scene" id="s2"><div class="script" style="font-size:22px">this one is for you…</div><div class="big">I Love<br>You</div><div style="width:200px;height:3px;background:#ffd36e;margin:6px"></div><div style="font-size:15px">to the best thing that ever happened to me</div></section>
+
+<section class="scene" id="s3"><svg id="tree" viewBox="0 0 400 500"></svg><div class="cap"><div style="font-size:11px">made for you, by hand</div><b style="font-size:26px;color:var(--pink)">I love you</b><div style="font-size:12px">and every ordinary day with you</div></div><div class="hint">tap anywhere to keep going</div></section>
+
+<section class="scene" id="s4"><div id="gift">🎁</div><h2 id="foryou"></h2><div class="hint">(tap to open)</div></section>
+
+<section class="scene" id="s4b"><h1 class="script">From me to you.</h1><p style="font-size:19px;margin:8px 0;font-weight:600">This is how much I love you.</p><div style="font-size:70px">👫</div><div class="hint">tap to continue</div></section>
+
+<section class="scene" id="s5"><div id="wall"></div><div class="end" id="end5"><div class="script" style="font-size:32px;color:var(--deep)" id="built"></div><div style="font-size:12px;opacity:.6;margin-top:6px">tap anywhere to go in</div></div></section>
+
+<section class="scene" id="s6"><span class="tag">💗 Someone wanted you to know</span><small style="opacity:.6;font-size:11px">CLOSED TO EVERYONE. EXCEPT YOU.</small><h1 id="mtitle"></h1><p style="font-size:13px;opacity:.7">Knock three times. That's the rule.</p>
+<div id="door"><div class="glow" id="glow"><b style="font-size:20px" id="come"></b><span style="font-size:12px">5 rooms, and every one of them is about you.</span></div><div class="sign" id="sign"></div><div class="ring"></div></div>
+<div class="dots"><span></span><span></span><span></span></div></section>
+
+<section class="scene room" id="s7"><small>ROOM 1 · THE GALLERY</small><h2>Our <em>photos</em></h2><p class="s">Each one is covered. Rub your finger across to see it.</p>
+<div class="frame"><div class="ph" id="gph"></div><canvas id="scr"></canvas></div>
+<div class="plate"><b>Untitled</b></div>
+<div class="nav"><button id="pv">←</button><span id="cnt" style="font-size:12px"></span><button id="nx">→</button></div>
+<button class="btn" id="walk1">Keep walking →</button></section>
+
+<section class="scene room" id="s8"><small>ROOM 2 · THE RESTORATION DESK</small><h2>This photo fell <em>apart</em>.</h2><p class="s">Nine pieces. Tap two to swap them.</p>
+<div id="grid"></div><div class="st" id="st">Moves 0</div><button class="btn" id="walk2" style="display:none">Next room →</button></section>
+
+<section class="scene room" id="s9"><small>ROOM 3 · THE READING ROOM</small><h2 id="lt">A letter, sealed just for <em>you</em>.</h2>
+<div id="env"><i></i></div><div class="s" style="font-size:12px;opacity:.7" id="envh">Tap the seal to open it</div>
+<div id="letter" style="display:none"></div><audio id="audio" controls></audio><button class="btn" id="walk3" style="display:none">Keep walking →</button></section>
+
+<section class="scene room" id="s10"><small>ROOM 4 · THE PROMISES</small><h2>Tick the ones you'll <em>hold on to</em>.</h2>
+<div id="prom"><h3>Our Promises</h3><div class="sub" id="between"></div><div id="plist"></div><div class="stamp" id="stamp">SEALED<br>WITH LOVE</div></div>
+<button class="btn" id="seal" disabled>Tick every promise</button></section>
+
+<audio id="bgm" loop></audio>
+<script>
+/* ============ ✏️ EDIT HERE ============ */
+const CONFIG={
+ girl:"Pihu", boy:"Hehe",
+ /* photos/ folder me 1.jpg ... 8.jpg daal do */
+ collage:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"],
+ gallery:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"],
+ puzzle:"puzzle.jpg",
+ letter:`Dear Diary,
+
+I know how much I talk about her without taking a single breath, but I just can’t help myself sometimes. Sometimes I over-explain myself, and sometimes I shut down my emotions. Why? Because even I am getting overwhelmed by the flood of emotions I feel for her.
+
+The joy she brings me, the happiness she brings me, the calmness she brings me, the way she cares, the way she does everything around me, it all feels so special. Her tantrums, her mood swings, and her mischievous behavior excite me the most, because I enjoy seeing her act like a kid around me. I enjoy handling her moods because I love her so much, and I want to love her even more.
+
+Whenever she grabs my hand or tucks her face into my chest when we hug, the flood of emotions comes to a stop, and all I think about in that moment is how precious and lovable she is.
+
+GOSH, I LOVE HER SO MUCH! ❤️`,
+ voice:"voice.mp3",            // e.g. "voice.mp3" (optional)
+ music:"",            // e.g. "music.mp3" (optional)
+ promises:["Never go to bed angry","Say the hard thing, gently","Always share the last bite","Choose you again, every ordinary morning","Pick you first. Every time."]
+};
+/* ====================================== */
+const $=s=>document.querySelector(s),C=CONFIG;
+const order=["s1","s1b","s2","s3","s4","s4b","s5","s6","s7","s8","s9","s10"];let cur=0;
+function go(id){document.querySelectorAll('.scene').forEach(e=>e.classList.remove('on'));$('#'+id).classList.add('on');cur=order.indexOf(id);({s3:tree,s4b:()=>{},s5:wall,s7:gal,s8:puz,s10:prom}[id]||(()=>{}))()}
+const next=()=>go(order[cur+1]);
+const timer=(ms,fn)=>setTimeout(fn,ms);
+$('#stillyou').textContent="Still you. Always you.";$('#by1').textContent="— "+C.boy;
+$('#foryou').textContent="For you, "+C.girl+".";$('#built').textContent="See what "+C.boy+" built for you";
+$('#mtitle').innerHTML=C.boy+" built you a <span style='color:#ffd36e'>museum.</span>";
+$('#sign').innerHTML="The Museum of "+C.girl+"<br>one visitor only";$('#come').textContent="Come in, "+C.girl+".";
+$('#between').textContent="BETWEEN "+C.boy.toUpperCase()+" AND "+C.girl.toUpperCase();
+$('#lt').innerHTML="A letter, sealed just for <em>you</em>.";
+if(C.music){$('#bgm').src=C.music;$('#mute').style.display='block'}
+$('#mute').onclick=()=>{const a=$('#bgm');a.muted=!a.muted;$('#mute').textContent=a.muted?'🔇':'🔊'};
+function startMusic(){if(C.music)$('#bgm').play().catch(()=>{})}
+const setBg=(el,src)=>{const i=new Image();i.onload=()=>el.style.backgroundImage=`url(${src})`;i.src=src};
+
+/* 1 heart */
+$('#heart').onclick=()=>{startMusic();go('s1b');timer(2500,()=>go('s2'))};
+$('#s1b').onclick=()=>go('s2');
+new MutationObserver(()=>{if($('#s2').classList.contains('on'))timer(3800,()=>$('#s2').classList.contains('on')&&go('s3'))}).observe($('#s2'),{attributes:true});
+/* 3 tree */
+function tree(){const t=$('#tree');t.innerHTML='<path d="M200 500 C195 400 205 340 200 280 M200 330 C150 290 120 250 90 200 M200 300 C250 260 290 230 320 170 M200 280 C190 220 200 170 200 120" stroke="#6b3a3f" stroke-width="12" fill="none" stroke-linecap="round"/>';
+ let n=0;const iv=setInterval(()=>{if(n++>150)return clearInterval(iv);const a=Math.random()*Math.PI*2,r=Math.sqrt(Math.random());
+ let x=200+r*Math.cos(a)*150,y=170+r*Math.sin(a)*120;/*heart-ish*/const tt=Math.random()*Math.PI*2,k=Math.sqrt(Math.random());
+ x=200+k*16*Math.pow(Math.sin(tt),3)*9;y=190-k*(13*Math.cos(tt)-5*Math.cos(2*tt)-2*Math.cos(3*tt)-Math.cos(4*tt))*8;
+ const e=document.createElementNS('http://www.w3.org/2000/svg','text');e.textContent=['💗','💖','🧡','💛','💕'][n%5];e.setAttribute('x',x);e.setAttribute('y',y);e.setAttribute('font-size',16+Math.random()*10);e.setAttribute('class','fh');t.appendChild(e);timer(30,()=>e.classList.add('on'))},40)}
+$('#s3').onclick=()=>go('s4');
+/* 4 gift + roses */
+$('#gift').onclick=()=>{const em=['🌹','🌸','🥀','🌷'];for(let i=0;i<45;i++){const r=document.createElement('div');r.className='rose';r.textContent=em[i%4];r.style.left=Math.random()*100+'vw';r.style.animationDuration=(2+Math.random()*2.5)+'s';r.style.animationDelay=Math.random()*1.5+'s';document.body.appendChild(r);timer(6000,()=>r.remove())}timer(3200,()=>go('s4b'))};
+$('#s4b').onclick=()=>go('s5');
+/* 5 collage */
+function wall(){const w=$('#wall');w.innerHTML='';const pos=[[6,6],[28,3],[50,6],[72,3],[8,40],[30,36],[54,40],[74,38]];
+ C.collage.slice(0,8).forEach((src,i)=>{const p=document.createElement('div');p.className='pol';p.innerHTML='<div></div>';setBg(p.firstChild,src);p.style.left=pos[i][0]+'%';p.style.top=pos[i][1]+'%';w.appendChild(p);
+ timer(500+i*450,()=>{p.classList.add('on');p.style.transform=`scale(1) rotate(${(Math.random()*14-7).toFixed(1)}deg)`})});
+ timer(4500,()=>$('#end5').classList.add('on'))}
+$('#s5').onclick=()=>{if($('#end5').classList.contains('on'))go('s6')};
+/* 6 museum door */
+let knocks=0;$('#door').onclick=()=>{if(knocks>=3)return;knocks++;const d=$('#door');d.classList.add('shake');timer(260,()=>d.classList.remove('shake'));
+ document.querySelectorAll('.dots span').forEach((s,i)=>s.classList.toggle('on',i<knocks));
+ if(knocks==3){timer(400,()=>{$('#glow').style.display='flex';d.classList.add('open')});timer(2600,()=>go('s7'))}};
+/* 7 gallery with scratch */
+let gi=0;const cv=$('#scr'),cx=cv.getContext('2d');
+function gal(){const f=C.gallery[gi];$('#gph').style.backgroundImage='';setBg($('#gph'),f);$('#cnt').textContent=(gi+1)+" / "+C.gallery.length;
+ cv.width=cv.offsetWidth;cv.height=cv.offsetHeight;const g=cx.createLinearGradient(0,0,cv.width,cv.height);g.addColorStop(0,'#e8cf8e');g.addColorStop(1,'#b89040');cx.globalCompositeOperation='source-over';cx.fillStyle=g;cx.fillRect(0,0,cv.width,cv.height)}
+let down=false;const sc=e=>{if(!down)return;const r=cv.getBoundingClientRect();cx.globalCompositeOperation='destination-out';cx.beginPath();cx.arc(e.clientX-r.left,e.clientY-r.top,26,0,7);cx.fill()};
+cv.style.touchAction='none';cv.onpointerdown=e=>{down=true;sc(e)};cv.onpointermove=sc;addEventListener('pointerup',()=>down=false);
+$('#pv').onclick=()=>{gi=(gi+C.gallery.length-1)%C.gallery.length;gal()};$('#nx').onclick=()=>{gi=(gi+1)%C.gallery.length;gal()};$('#walk1').onclick=()=>go('s8');
+/* 8 puzzle */
+let tiles=[],sel=-1,moves=0,t0=0;
+function puz(){const g=$('#grid');tiles=[0,1,2,3,4,5,6,7,8];do{tiles.sort(()=>Math.random()-.5)}while(tiles.every((v,i)=>v==i));moves=0;sel=-1;t0=Date.now();$('#walk2').style.display='none';draw()}
+function draw(){const g=$('#grid');g.innerHTML='';tiles.forEach((v,i)=>{const d=document.createElement('div');d.style.backgroundColor='#ead0d6';d.style.backgroundImage=`url(${C.puzzle})`;d.style.backgroundPosition=`${(v%3)*50}% ${Math.floor(v/3)*50}%`;if(i==sel)d.className='sel';d.onclick=()=>pick(i);g.appendChild(d)});$('#st').textContent="Moves "+moves}
+function pick(i){if(sel<0){sel=i}else{[tiles[sel],tiles[i]]=[tiles[i],tiles[sel]];sel=-1;moves++}draw();
+ if(tiles.every((v,i)=>v==i)){const s=Math.round((Date.now()-t0)/1000);$('#st').textContent=`Fixed it in ${moves} moves and ${s}s. ${C.boy} would like you to know that took them longer.`;$('#grid').style.pointerEvents='none';$('#walk2').style.display='inline-block';confetti()}}
+function confetti(){for(let i=0;i<40;i++){const r=document.createElement('div');r.className='rose';r.textContent=['🎉','✨','💖'][i%3];r.style.fontSize='20px';r.style.left=Math.random()*100+'vw';r.style.animationDuration=(1.5+Math.random()*2)+'s';document.body.appendChild(r);timer(4000,()=>r.remove())}}
+$('#walk2').onclick=()=>{$('#grid').style.pointerEvents='';go('s9')};
+/* 9 letter */
+$('#env').onclick=()=>{$('#env').style.display='none';$('#envh').style.display='none';$('#lt').style.display='none';const L=$('#letter');L.style.display='block';L.innerHTML=C.letter.replace(/</g,'&lt;')+`<span class="sig">— ${C.boy}</span>`;
+ if(C.voice){const a=$('#audio');a.src=C.voice;a.style.display='block'}$('#walk3').style.display='inline-block'};
+$('#walk3').onclick=()=>go('s10');
+/* 10 promises */
+function prom(){const l=$('#plist');l.innerHTML='';let n=0;C.promises.forEach((p,i)=>{const b=document.createElement('label');b.innerHTML=`<input type="checkbox"> ${i+1}. ${p}`;b.firstChild.onchange=()=>{n=l.querySelectorAll('input:checked').length;const s=$('#seal');s.disabled=n<C.promises.length;s.textContent=n<C.promises.length?`Tick every promise (${n}/${C.promises.length})`:'Seal it →'};l.appendChild(b)})}
+$('#seal').onclick=()=>{$('#stamp').classList.add('on');$('#seal').textContent='Sealed 💖';$('#seal').disabled=true;confetti()};
+</script></body></html>
